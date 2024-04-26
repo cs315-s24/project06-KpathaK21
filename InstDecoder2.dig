@@ -45,7 +45,7 @@
         </entry>
         <entry>
           <string>Output Splitting</string>
-          <string>0-6,12-14,25-31</string>
+          <string>0-6,12-14,25-31,26-31</string>
         </entry>
       </elementAttributes>
       <pos x="160" y="100"/>
@@ -107,8 +107,8 @@
         </entry>
         <entry>
           <string>Data</string>
-          <data>40400,40000,43b00,700,50000,51800,54000,55800,2c20,2c40,2c80,2c60
-,48000,44000,6d000,4040d,40415,80b,813,60000,64000,4041d,81b,68400,44000</data>
+          <data>40400,40000,43700,700,50000,51800,54000,55800,2c20,2c40,2c80,2c60
+,48000,44000,6d000,4040d,40415,90b,913,60000,64000,4041d,91b,68400</data>
         </entry>
         <entry>
           <string>intFormat</string>
@@ -412,7 +412,7 @@
         </entry>
         <entry>
           <string>NetName</string>
-          <string>funct7</string>
+          <string>funct6</string>
         </entry>
       </elementAttributes>
       <pos x="20" y="1120"/>
@@ -426,7 +426,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>7</int>
+          <int>6</int>
         </entry>
         <entry>
           <string>intFormat</string>
@@ -548,20 +548,6 @@
       <pos x="20" y="1440"/>
     </visualElement>
     <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>funct7</string>
-        </entry>
-      </elementAttributes>
-      <pos x="20" y="1480"/>
-    </visualElement>
-    <visualElement>
       <elementName>Const</elementName>
       <elementAttributes>
         <entry>
@@ -624,7 +610,7 @@
         </entry>
         <entry>
           <string>Bits</string>
-          <int>7</int>
+          <int>6</int>
         </entry>
         <entry>
           <string>intFormat</string>
@@ -1776,16 +1762,6 @@
       <pos x="620" y="1380"/>
     </visualElement>
     <visualElement>
-      <elementName>SRLI.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>AND</string>
-        </entry>
-      </elementAttributes>
-      <pos x="780" y="1460"/>
-    </visualElement>
-    <visualElement>
       <elementName>Tunnel</elementName>
       <elementAttributes>
         <entry>
@@ -1882,16 +1858,6 @@
       <pos x="640" y="1500"/>
     </visualElement>
     <visualElement>
-      <elementName>SRLI.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>OR</string>
-        </entry>
-      </elementAttributes>
-      <pos x="780" y="1640"/>
-    </visualElement>
-    <visualElement>
       <elementName>Tunnel</elementName>
       <elementAttributes>
         <entry>
@@ -1918,38 +1884,6 @@
         </entry>
       </elementAttributes>
       <pos x="720" y="1700"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>funct7</string>
-        </entry>
-      </elementAttributes>
-      <pos x="720" y="1740"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Value</string>
-          <long>0</long>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>7</int>
-        </entry>
-        <entry>
-          <string>intFormat</string>
-          <intFormat>bin</intFormat>
-        </entry>
-      </elementAttributes>
-      <pos x="640" y="1760"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
@@ -1986,16 +1920,6 @@
         </entry>
       </elementAttributes>
       <pos x="640" y="1680"/>
-    </visualElement>
-    <visualElement>
-      <elementName>SRLI.dig</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>SUBW</string>
-        </entry>
-      </elementAttributes>
-      <pos x="780" y="2300"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -2354,6 +2278,77 @@
         </entry>
       </elementAttributes>
       <pos x="1860" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>funct6</string>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>funct6</string>
+        </entry>
+      </elementAttributes>
+      <pos x="20" y="1480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>AND.dig</elementName>
+      <elementAttributes/>
+      <pos x="780" y="1460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>OR.dig</elementName>
+      <elementAttributes/>
+      <pos x="780" y="1640"/>
+    </visualElement>
+    <visualElement>
+      <elementName>SUBW.dig</elementName>
+      <elementAttributes/>
+      <pos x="780" y="2300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>funct7</string>
+        </entry>
+      </elementAttributes>
+      <pos x="720" y="1740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>bin</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="640" y="1760"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -2842,6 +2837,10 @@
       <p2 x="360" y="1440"/>
     </wire>
     <wire>
+      <p1 x="180" y="160"/>
+      <p2 x="240" y="160"/>
+    </wire>
+    <wire>
       <p1 x="720" y="1700"/>
       <p2 x="780" y="1700"/>
     </wire>
@@ -2950,12 +2949,12 @@
       <p2 x="80" y="1480"/>
     </wire>
     <wire>
-      <p1 x="720" y="1740"/>
-      <p2 x="780" y="1740"/>
-    </wire>
-    <wire>
       <p1 x="60" y="1740"/>
       <p2 x="80" y="1740"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="1740"/>
+      <p2 x="780" y="1740"/>
     </wire>
     <wire>
       <p1 x="20" y="460"/>
@@ -3014,12 +3013,12 @@
       <p2 x="1860" y="220"/>
     </wire>
     <wire>
-      <p1 x="640" y="1760"/>
-      <p2 x="780" y="1760"/>
-    </wire>
-    <wire>
       <p1 x="-20" y="1760"/>
       <p2 x="80" y="1760"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="1760"/>
+      <p2 x="780" y="1760"/>
     </wire>
     <wire>
       <p1 x="-80" y="480"/>

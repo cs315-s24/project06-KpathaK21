@@ -49,8 +49,8 @@ to_upper_s:
 loop:
     lb t0, (a0)                 # t0 = *a0
     beq t0, zero, done          # t0 == '\0', stop loop
-    blt t0, t1, next            # < 'a', don't change
-    bge t0, t2, next            # > 'z', don't change
+    blt t0, t1, next            # < 'a', dont change
+    bge t0, t2, next            # > 'z', dont change
 
     addi t0, t0, -0x20          # t0 -= 32 (uppercase)
 

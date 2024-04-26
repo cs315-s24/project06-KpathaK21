@@ -227,7 +227,7 @@
         </entry>
         <entry>
           <string>Output Splitting</string>
-          <string>20</string>
+          <string>21</string>
         </entry>
       </elementAttributes>
       <pos x="160" y="160"/>
@@ -237,7 +237,7 @@
       <elementAttributes>
         <entry>
           <string>inputBits</string>
-          <int>20</int>
+          <int>21</int>
         </entry>
         <entry>
           <string>outputBits</string>
@@ -337,20 +337,6 @@
       <pos x="20" y="340"/>
     </visualElement>
     <visualElement>
-      <elementName>BitExtender</elementName>
-      <elementAttributes>
-        <entry>
-          <string>inputBits</string>
-          <int>7</int>
-        </entry>
-        <entry>
-          <string>outputBits</string>
-          <int>64</int>
-        </entry>
-      </elementAttributes>
-      <pos x="180" y="340"/>
-    </visualElement>
-    <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>
@@ -391,6 +377,20 @@
         </entry>
       </elementAttributes>
       <pos x="220" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>BitExtender</elementName>
+      <elementAttributes>
+        <entry>
+          <string>inputBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>outputBits</string>
+          <int>64</int>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="340"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -499,12 +499,12 @@
       <p2 x="20" y="340"/>
     </wire>
     <wire>
-      <p1 x="40" y="340"/>
-      <p2 x="180" y="340"/>
-    </wire>
-    <wire>
       <p1 x="240" y="340"/>
       <p2 x="380" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="40" y="340"/>
+      <p2 x="180" y="340"/>
     </wire>
     <wire>
       <p1 x="140" y="120"/>
